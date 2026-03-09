@@ -70,6 +70,7 @@ def mutatie_neuniforma_cu_pas(a , b , pas, pop , pm):
         individ_nou = []
         copie = copy.deepcopy(individ)
         for gena in individ:
+            # cand generam cu random.uniform avem neapp nevoie de bounds chiar daca e intre 0 si 1
             r = random.uniform(0 , 1)
             if r < pm:
                 epsilon = random.uniform(-pas , pas)
@@ -97,6 +98,7 @@ def mutatie_neuniforma_gauss(a , b , sigma, pop , pm):
         individ_nou = []
         copie = copy.deepcopy(individ)
         for gena in individ:
+            # cand generam cu random.uniform avem neapp nevoie de bounds chiar daca e intre 0 si 1
             r = random.uniform(0 , 1)
             if r < pm:
                 print("mutat")
